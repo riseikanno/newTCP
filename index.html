@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>TCP</title>
+    <style>
+        #font_uline{
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body class="bg-light">
+    <h3 class="text-center bg-success text-info">welcome to</h3>
+    <h1 class="text-center bg-success text-info" id="font_uline">Triple Crash Poker</h1>
+    <div class="mx-3 my-5">
+        <i>rules<br>
+            ☞　you,com1,com2のVS3<br>
+            ☞　全部で10ターン。毎ターン1~10の中から任意の数字を入力し、そのターンで最も大きい数字を選択したプレイヤーに1pt加算される。同じ数字を複数回使うことはできない。<br>
+            ☞　2人のプレイヤーが同じ数字を選びcrashした場合、数字の大小に関わらずcrashしなかった残りのプレイヤーに1pt加算される。<br>
+            ☞　3人のプレイヤーが同じ数字を選んだ場合triple crashとなり、そのターンは誰にもptは加算されない。<br>
+            ☞　毎ターン終了後、そのターンの勝者・crashの有無・最大値と最小値の差・累計ptが表示される。<br>
+            ☞　10ターン終了後youはcom1,com2が各ターンで選択した数字の予想を行い、10ターン分すべて当てることができればそれぞれプラス1pt。最大でプラス2pt。<br>
+            ☞　最終的に最もptを獲得したプレイヤーが勝利となる。
+        </i>
+    </div>
+    <form style="text-align: center; " id="form">
+        <label>Enter Number : <input type="number" id="input" min="1" max="10" /></label>
+        <input type="submit" value="決定" id="button" oninput="enternumber()"/>
+    </form>
+    <script type="text/javascript" src="index.js"></script>
+</body>
+</html>
